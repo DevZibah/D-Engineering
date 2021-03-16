@@ -244,12 +244,12 @@ DATE:               September 2017
 
 .brandtxt-color {
     color: #00008B;
-     !important
+     /* !important */
 }
 
-.secbrandtxt-color {
+/* .secbrandtxt-color {
     color: ;
-}
+} */
 
 /* font */
 .headfont {
