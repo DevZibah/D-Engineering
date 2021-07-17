@@ -405,8 +405,9 @@ body {
 }
 
 /* NAVBAR */
-.navbar {
+/* .navbar {
     margin-bottom: 0;
+    border: 1px solid red;
 }
 
 .navbar-default {
@@ -420,7 +421,7 @@ body {
     padding-top: 30px;
     padding-bottom: 35px;
     color: #000 !important;
-}
+} */
 
 .navbar ul a:hover,
 .navbar ul a.current {
@@ -428,7 +429,7 @@ body {
     color: #fff !important;
 }
 
-.navbar li.dropdown a.dropdown-toggle {
+/* .navbar li.dropdown a.dropdown-toggle {
     border-bottom: none !important;
 }
 
@@ -458,7 +459,26 @@ body {
 .navbar .logo {
     position: relative;
     top: 10px;
+} */ 
+
+/* =================== */
+/* MY OWN NAVBAR */
+
+.navbar-nav li a{
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    color: #000;
 }
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler span {
+    fill: red !important;
+}
+
+/* =================== */
 
 /*
  ==========================================================================
@@ -767,14 +787,14 @@ body {
 @media (max-width: 1199px) {
 
     /* navbar */
-    .navbar .logo {
+    /* .navbar .logo {
         top: 27px;
     }
 
     .navbar .navbar-collapse ul a {
         padding-left: 7px;
         padding-right: 7px;
-    }
+    } */
 
     /* signup form */
     .signup .form-group.text {
@@ -860,11 +880,11 @@ body {
 
 
     /* navbar */
-    .navbar .logo {
+    /* .navbar .logo {
         top: 27px;
         height: 90px;
         width: 86px;
-    }
+    } */
 
     .navbar .navbar-collapse ul a {
         padding-left: 3px;
@@ -905,49 +925,7 @@ body {
         height: 70px;
     } */
 
-    .navbar-nav {
-        margin-top: 0;
-    }
-
-    .navbar-default .navbar-collapse {
-        background-color: #fff;
-        margin-top: 7px;
-    }
-
-    .navbar .navbar-collapse ul a {
-        display: block;
-        padding: 10px 0 10px 20px;
-        font-size: 18px;
-        color: #000;
-        margin-bottom: 3px;
-    }
-
-    .navbar .navbar-collapse ul a:hover {
-        color: #fff;
-    }
-
-    .current,
-    .navbar ul a:hover {
-        border-bottom: none !important;
-    }
-
-    /* toggle icon */
-    .navbar-default .navbar-toggle {
-        border: 2px solid #FD0F11;
-        margin-top: 18px;
-    }
-
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: #FD0F11;
-    }
-
-    .navbar .logo {
-        position: absolute;
-        left: 20px;
-        top: 5px;
-        height: 55px;
-        width: 208px;
-    }
+    
 
     /* HOME PAGE */
     .carousel .item {
@@ -965,7 +943,6 @@ body {
 
 }
 
-@media (max-width: 643px) {}
 
 @media (max-width: 600px) {
 
@@ -1019,5 +996,3 @@ body {
     }
 
 }
-
-@media (max-width: 300px) {}
