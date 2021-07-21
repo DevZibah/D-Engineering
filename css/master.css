@@ -244,7 +244,7 @@ DATE:               September 2017
 
 .brandtxt-color {
     color: #00008B;
-     /* !important */
+    /* !important */
 }
 
 /* .secbrandtxt-color {
@@ -459,23 +459,29 @@ body {
 .navbar .logo {
     position: relative;
     top: 10px;
-} */ 
+} */
 
 /* =================== */
 /* MY OWN NAVBAR */
 
-.navbar-nav li a{
+.navbar-nav li a {
     /* border: 1px solid red; */
     text-transform: uppercase;
     color: #000;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none !important;
 }
 
 .navbar-toggler span {
     fill: red !important;
+}
+
+.old-navbar-btn {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
 }
 
 /* =================== */
@@ -486,11 +492,104 @@ body {
 */
 
 /* CAROUSEL */
-.carousel .cc-item-bg-img,
+.carousel {
+    height: 70vh;
+}
+
+.carousel-item {
+    height: 70vh;
+    border: 1px solid red;
+}
+
+.carousel-item img {
+    height: 70vh;
+}
+
+.carousel-item article {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    margin: auto !important;
+    text-align: center;
+    color: #fff;
+    /* z-index: 999; */
+}
+
+.carousel-item article div {
+    width: 70%;
+}
+
+.carousel-item article h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.carousel-item article div p {
+    margin: 1.5rem 0;
+}
+
+.carousel .jumbo-btn {
+    border: 3px solid #fff;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    padding: .7rem 1.5rem;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+
+    animation-name: kenburns;
+}
+
+.carousel-control-prev {
+    position: relative;
+    border: 2px solid #fff;
+    width: fit-content !important;
+    height: fit-content !important;
+    top: 45% !important;
+    left: 5% !important;
+    padding: 1rem;
+}
+
+.carousel-control-next {
+    position: relative;
+    border: 2px solid #fff;
+    width: fit-content !important;
+    height: fit-content !important;
+    top: 45% !important;
+    right: 5% !important;
+    padding: 1rem;
+}
+
+.carousel .cc-item-bg-img {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.item-content {
+    animation: makeVisible linear 2s;
+}
+
+
+/* .carousel .cc-item-bg-img,
 .jumbo {
     width: 100%;
     height: 550px;
-    /* margin-top: 85px; */
+    margin-top: 85px;
     margin-bottom: 0;
     background-color: #222;
 }
@@ -503,7 +602,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
 }
 
-.item-content{
+.item-content {
     animation: makeVisible linear 2s;
 }
 
@@ -572,7 +671,7 @@ body {
 .carousel {
     position: static;
     z-index: -99;
-}
+} */
 
 /* .item-container,
 .jumbo {
@@ -756,11 +855,15 @@ body {
 .elect-jumbo {
     background: url(../img/elect_jumbo_bg.jpg) no-repeat center center;
     background-size: cover;
+    margin-top: 81px;
+    border-radius: 0 !important;
 }
 
 .mech-jumbo {
-    background: url(../img/mech_jumbo_bg.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../img/mech_jumbo_bg.jpg) no-repeat center center !important;
+    background-size: cover !important;
+    margin-top: 81px;
+    border-radius: 0 !important;
 }
 
 /* mainbar */
@@ -925,7 +1028,7 @@ body {
         height: 70px;
     } */
 
-    
+
 
     /* HOME PAGE */
     .carousel .item {
@@ -994,5 +1097,9 @@ body {
         font-size: 30px;
         letter-spacing: 6px;
     }
+
+}
+
+@media (max-width: 360px){
 
 }
