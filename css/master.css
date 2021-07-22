@@ -874,14 +874,14 @@ body {
 .elect-jumbo {
     background: url(../img/elect_jumbo_bg.jpg) no-repeat center center;
     background-size: cover;
-    margin-top: 81px;
+    /* margin-top: 81px; */
     border-radius: 0 !important;
 }
 
 .mech-jumbo {
     background: url(../img/mech_jumbo_bg.jpg) no-repeat center center !important;
     background-size: cover !important;
-    margin-top: 81px;
+    /* margin-top: 81px; */
     border-radius: 0 !important;
 }
 
@@ -927,7 +927,7 @@ body {
     }
 
     .navbar-toggle {
-        border: none;
+        border: none !important;
         background: transparent !important;
     }
 
@@ -942,8 +942,8 @@ body {
 
     .navbar-brand {
         /* border: 1px solid red; */
-        width: 50%;
-        height: 4rem;
+        width: 50% !important;
+        height: 4rem !important;
         margin-top: .7rem !important;
     }
 
@@ -995,10 +995,70 @@ body {
         top: 85% !important;
         padding: .3rem !important;
     }
+
+    /* mech and elect jumbotron */
+    .jumbo h2 {
+        font-size: 2.5rem;
+    }
+
+    .sm-container {
+        max-width: 90%;
+    }
+
+    .jumbo p {
+        font-size: 1.5rem !important;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    /* !home navbar */
+
+    .navbar-header {
+        float: initial !important;
+        width: initial !important;
+        margin: 0 !important;
+    }
+
+    .navbar-nav {
+        float: initial !important;
+        width: initial !important;
+        margin: 0 !important;
+    }
+
+
+    .cc-navbar {
+        padding: .5rem 1rem !important;
+    }
+
+    .navbar-toggle {
+        border: none !important;
+        background: transparent !important;
+    }
+
+    .navbar-toggle i {
+        font-size: 2rem;
+    }
+
+    .navbar-header,
+    .navbar-collapse {
+        margin: 0 !important;
+    }
+
+    .navbar-brand {
+        /* border: 1px solid red; */
+        width: 40%;
+        height: 4rem !important;
+        margin-top: .7rem !important;
+    }
+
+    .navbar-brand .logo-img {
+        width: 100%;
+    }
+
+    /* !home navbar end */
+
 
     /* CAROUSEL */
 
@@ -1018,6 +1078,20 @@ body {
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+
+    .navbar-header {
+        float: none !important;
+        border: 1px solid red !important;
+        width: fit-content;
+        margin: 0 auto !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        width: fit-content;
+        margin: 0 auto !important;
+    }
+
     .carousel-control-prev {
 
         top: 85% !important;
