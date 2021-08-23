@@ -502,8 +502,8 @@ body {
   height: 100%;
 }
 
-.outer-nav {
-}
+/* .outer-nav {
+} */
 
 /* =================== */
 
@@ -594,14 +594,7 @@ body {
   padding: 1rem;
 }
 
-@keyframes img-bx {
-  0% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(-3deg);
-  }
-}
+
 /* @keyframes cc-item-bg-img {
     0% {
         transform: scale(0, .025);
@@ -616,19 +609,15 @@ body {
   animation-iteration-count: infinite;
   animation-duration: 10s;
 }
-.img-bx {
-  animation: img-bx ease-in-out 0.5s infinite alternate;
-}
-
 .item-content h2{
-    animation: item-content ease-in-out 4s 1 forwards;
+    animation: item-content ease-in-out 2s 1 forwards;
   /* animation: makeVisible linear 2s; */
 }
 .item-content p{
-    animation: item-content ease-in-out 7s 1 forwards;
+    animation: item-content ease-in-out 4s 1 forwards;
 }
 .item-content button{
-    animation: item-content ease-in-out 10s 1 forwards;
+    animation: item-content ease-in-out 6s 1 forwards;
 }
 @keyframes item-content {
     0% {
